@@ -7,8 +7,8 @@ title: 支付
 | method | 说明 | 参数 | 返回值 |
 | :---: | :---: | :---: | :---: |
 | mp | 公众号支付 | array $order | Collection |
-| wap | 手机网站支付 | array $order | Response |
-| app | APP 支付 | array $order | Response |
+| wap | 手机网站支付 | array $order | Collection |
+| app | APP 支付 | array $order | Collection |
 | scan | 扫码支付 | array $order | Collection |
 | mini | 小程序支付 | array $order | Collection |
 
@@ -65,6 +65,7 @@ $order = [
 ];
 
 return Pay::wechat()->wap($order);
+// $result->h5_url;
 ```
 
 ### 订单配置参数
@@ -92,7 +93,7 @@ $order = [
     ],
 ];
 
-// 将返回 json 格式，供后续 APP 调用，调用方式不在本文档讨论范围内，请参考官方文档。
+// 将返回 Collection 实例，供后续 APP 调用，调用方式不在本文档讨论范围内，请参考官方文档。
 return Pay::wechat()->app($order);
 ```
 
