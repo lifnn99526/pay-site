@@ -24,6 +24,7 @@ title: 返回格式
 
 支付宝中
 
+- `app()` APP 支付
 - `web()` web 支付
 - `wap()` wap 支付
 - `success()` 响应回调
