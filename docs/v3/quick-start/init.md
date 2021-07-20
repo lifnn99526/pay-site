@@ -54,6 +54,7 @@ $config = [
             'wechat_public_cert_path' => [
                 '45F59D4DABF31918AFCEC556D5D2C6E376675D57' => __DIR__.'/Cert/wechatPublicKey.crt',
             ],
+            'notify_url' => 'https://yansongda.cn/wechat/notify',
         ]
     ],
     'logger' => [
