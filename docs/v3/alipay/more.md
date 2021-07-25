@@ -76,6 +76,10 @@ $result = Pay::alipay()->pay($allPlugins, $params);
 
 - `Yansongda\Pay\Plugin\Alipay\Fund\TransOrderQueryPlugin`
 
+### 转账业务单据查询接口
+
+- `Yansongda\Pay\Plugin\Alipay\Fund\TransCommonQueryPlugin`
+
 ### 资金转账页面支付接口
 
 - `Yansongda\Pay\Plugin\Alipay\Fund\TransPagePayPlugin`
@@ -87,6 +91,10 @@ $result = Pay::alipay()->pay($allPlugins, $params);
 ### 单笔转账接口
 
 - `Yansongda\Pay\Plugin\Alipay\Fund\TransUniTransferPlugin`
+
+### 单笔转账到银行账户接口
+
+- `Yansongda\Pay\Plugin\Alipay\Fund\TransTobankTransferPlugin`
 
 ## 工具类API
 
