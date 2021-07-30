@@ -12,7 +12,7 @@ title: FAQ
 
 2. 我是做 API 的，怎样可以获取 Response 中的内容？
 
-   返回的 Response 中，`$response->getBody()->getContent()` 可获取内容。详细请了解 PSR 规范。
+   返回的 Response 中，`$response->getBody()->getContents()` 可获取内容。详细请了解 PSR 规范。
 
 3. cURL error 60: SSL certificate problem: unable to get local issuer certificate
 
