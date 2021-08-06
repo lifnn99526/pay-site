@@ -12,5 +12,5 @@ title: 安装
 
 ## 安装方式
 ```shell
-composer require yansongda/pay -vvv
+composer require yansongda/pay:^2.10 -vvv
 ```
