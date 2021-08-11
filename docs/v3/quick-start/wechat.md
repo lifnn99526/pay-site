@@ -16,7 +16,7 @@ title: 微信
 Pay::config($config);
 
 $order = [
-    'out_trade_no' => time(),
+    'out_trade_no' => time().'',
     'description' => 'subject-测试',
     'amount' => [
         'total' => '1',
@@ -38,7 +38,7 @@ $result = Pay::wechat()->mp($order);
 Pay::config($config);
 
 $order = [
-    'out_trade_no' => time(),
+    'out_trade_no' => time().'',
     'description' => 'subject-测试',
     'amount' => [
         'total' => '1',
@@ -60,7 +60,7 @@ return Pay::wechat()->wap($order);
 Pay::config($config);
 
 $order = [
-    'out_trade_no' => time(),
+    'out_trade_no' => time().'',
     'description' => 'subject-测试',
     'amount' => [
         'total' => '1',
@@ -77,7 +77,7 @@ return Pay::wechat()->app($order);
 Pay::config($config);
 
 $order = [
-    'out_trade_no' => time(),
+    'out_trade_no' => time().'',
     'description' => 'subject-测试',
     'amount' => [
         'total' => '1',
@@ -94,7 +94,7 @@ $result = Pay::wechat()->scan($order);
 Pay::config($config);
 
 $order = [
-    'out_trade_no' => time(),
+    'out_trade_no' => time().'',
     'description' => 'subject-测试',
     'amount' => [
         'total' => 1,
@@ -114,23 +114,23 @@ $result = Pay::wechat()->mini($order);
 ## 刷卡支付
 
 :::warning
-微信支付 v3 版 api 并不支持刷卡支付，后续将接入微信支付 v2 版 API，敬请期待
+微信支付 v3 版 api 并不支持刷卡支付，后续将接入微信支付 v2 版 API，敬请期待。如果确实有此需求，可以使用 [Pay 的 v2 版](/docs/v2/wechat/)
 :::
 
 ## 账户转账
 
 :::warning
-微信支付 v3 版 api 并不支持转账，后续将接入微信支付 v2 版 API，敬请期待
+微信支付 v3 版 api 并不支持转账，后续将接入微信支付 v2 版 API，敬请期待。如果确实有此需求，可以使用 [Pay 的 v2 版](/docs/v2/wechat/)
 :::
 
 ## 普通红包
 
 :::warning
-微信支付 v3 版 api 并不支红包，后续将接入微信支付 v2 版 API，敬请期待
+微信支付 v3 版 api 并不支红包，后续将接入微信支付 v2 版 API，敬请期待。如果确实有此需求，可以使用 [Pay 的 v2 版](/docs/v2/wechat/)
 :::
 
 ## 裂变红包
 
 :::warning
-微信支付 v3 版 api 并不支持红包，后续将接入微信支付 v2 版 API，敬请期待
+微信支付 v3 版 api 并不支持红包，后续将接入微信支付 v2 版 API，敬请期待。如果确实有此需求，可以使用 [Pay 的 v2 版](/docs/v2/wechat/)
 :::
