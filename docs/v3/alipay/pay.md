@@ -70,6 +70,17 @@ return Pay::alipay()->wap([
 
 为您考虑到了这一点，如果您想使用 GET 方式提交请求，可以在参数中增加 `['_method' => 'get']` 即可，例如
 
+```php
+Pay::config($this->config);
+
+return Pay::alipay()->wap([
+    'out_trade_no' => ''.time(),
+    'total_amount' => '0.01',
+    'subject' => 'yansongda 测试 - 1',
+    '_method' => 'get',
+]);
+```
+
 ### 订单配置参数
 
 **所有订单配置中，客观参数均不用配置，扩展包已经为大家自动处理了**，比如，`product_code` 等参数。
