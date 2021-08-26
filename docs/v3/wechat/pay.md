@@ -20,7 +20,7 @@ title: 支付
 Pay::config($config);
 
 $order = [
-    'out_trade_no' => time(),
+    'out_trade_no' => time().'',
     'description' => 'subject-测试',
     'amount' => [
         'total' => '1',
@@ -51,7 +51,7 @@ $result = Pay::wechat()->mp($order);
 Pay::config($config);
 
 $order = [
-    'out_trade_no' => time(),
+    'out_trade_no' => time().'',
     'description' => 'subject-测试',
     'amount' => [
         'total' => '1',
@@ -86,7 +86,7 @@ return Pay::wechat()->wap($order);
 Pay::config($config);
 
 $order = [
-    'out_trade_no' => time(),
+    'out_trade_no' => time().'',
     'description' => 'subject-测试',
     'amount' => [
         'total' => '1',
@@ -115,7 +115,7 @@ return Pay::wechat()->app($order);
 Pay::config($config);
 
 $order = [
-    'out_trade_no' => time(),
+    'out_trade_no' => time().'',
     'description' => 'subject-测试',
     'amount' => [
         'total' => '1',
@@ -144,7 +144,7 @@ $result = Pay::wechat()->scan($order);
 Pay::config($config);
 
 $order = [
-    'out_trade_no' => time(),
+    'out_trade_no' => time().'',
     'description' => 'subject-测试',
     'amount' => [
         'total' => 1,
