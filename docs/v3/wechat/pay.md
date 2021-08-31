@@ -23,7 +23,7 @@ $order = [
     'out_trade_no' => time().'',
     'description' => 'subject-测试',
     'amount' => [
-        'total' => '1',
+        'total' => 1,
     ],
     'payer' => [
         'openid' => 'onkVf1FjWS5SBxxxxxxxx',
@@ -54,7 +54,7 @@ $order = [
     'out_trade_no' => time().'',
     'description' => 'subject-测试',
     'amount' => [
-        'total' => '1',
+        'total' => 1,
     ],
     'scene_info' => [
         'payer_client_ip' => '1.2.4.8',
@@ -89,7 +89,7 @@ $order = [
     'out_trade_no' => time().'',
     'description' => 'subject-测试',
     'amount' => [
-        'total' => '1',
+        'total' => 1,
     ],
 ];
 
@@ -118,7 +118,7 @@ $order = [
     'out_trade_no' => time().'',
     'description' => 'subject-测试',
     'amount' => [
-        'total' => '1',
+        'total' => 1,
     ],
 ];
 
