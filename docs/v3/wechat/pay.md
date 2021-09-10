@@ -36,6 +36,10 @@ $result = Pay::wechat()->mp($order);
 // 后续调用不在本文档讨论范围内，请自行参考官方文档。
 ```
 
+:::warning 调起微信支付 timeStamp 参数问题
+[微信支付](https://pay.weixin.qq.com/wiki/doc/apiv3/apis/chapter3_1_4.shtml) 和 [微信](https://developers.weixin.qq.com/doc/offiaccount/OA_Web_Apps/JS-SDK.html#58) 两个文档所需要的参数不一致，微信支付中是 timeStamp, 微信调起的参数是 timestamp，需要自行处理。
+:::
+
 ### 订单配置参数
 
 **所有订单配置中，客观参数均不用配置，扩展包已经为大家自动处理了**，比如，`appid`，`sign` 等参数，大家只需传入订单类主观参数即可。
