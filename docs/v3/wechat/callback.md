@@ -25,11 +25,11 @@ $result = Pay::wechat()->callback();
 建议仅在 php-fpm 下使用，swoole 方式请使用 `ServerRequestInterface` 参数传递方式
 :::
 
-### `ServerRequestInterface`
+#### `ServerRequestInterface`
 
 推荐在 swoole 环境下传递此参数，传递此参数后， yansongda/pay 会自动进行后续处理
 
-### `array`
+#### `array`
 
 也可以自行解析请求参数，传递一个 array 会自动进行后续处理
 
