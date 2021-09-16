@@ -20,5 +20,5 @@ features:
   details: 命名统一，终于可以不用记那些烂七八糟的名称了。
 - title: 文件结构清晰
   details: 文件结构清晰，架构明了，欢迎 PR。
-footer: MIT Licensed | Copyright © 2018-now Yansongda
+footer: MIT Licensed | Copyright © 2017-now Yansongda
 ---

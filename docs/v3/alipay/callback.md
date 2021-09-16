@@ -21,7 +21,7 @@ $result = Pay::alipay()->callback();
 
 ## 参数
 
-### 无参数
+### 第一个参数
 
 如果您没有传参，则 `yansongda/pay` 会自动识别支付宝的回调请求并处理，通过 `Collection` 实例返回支付宝的处理参数
 
@@ -36,3 +36,9 @@ $result = Pay::alipay()->callback();
 ### `array`
 
 也可以自行解析请求参数，传递一个 array 会自动进行后续处理
+
+### 第二个参数
+
+第二个参数主要是传递相关自定义变量的，类似于 `web()` 中的 `_config` / `_method` 等参数。
+
+例如，如果你想在回调的时候使用非默认配置，则可以 `Pay::alipay()->callback(null, ['_config' => 'yansongda'])` 切换为 `yansongda` 这个租户的配置信息。
