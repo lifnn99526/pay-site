@@ -94,7 +94,7 @@ return Pay::alipay()->wap([
 ```php
 Pay::config($this->config);
 
-// 将返回字符串，供后续 APP 调用，调用方式不在本文档讨论范围内，请参考官方文档。
+// 后续 APP 调用方式不在本文档讨论范围内，请参考官方文档。
 return Pay::alipay()->app([
     'out_trade_no' => time(),
     'total_amount' => '0.01',
