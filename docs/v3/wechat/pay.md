@@ -82,6 +82,29 @@ return Pay::wechat()->wap($order);
 
 后续调起支付不再本文档讨论范围内，请参考[官方文档](https://pay.weixin.qq.com/wiki/doc/apiv3/apis/chapter3_3_4.shtml)
 
+### 其它
+
+#### 使用小程序的 app_id 关联 h5 支付
+
+默认情况下，H5 支付所使用的 appid 是微信公众号的 appid，即配置文件中的 mp_app_id 参数，如果想使用关联的小程序的 appid，则只需要在调用参数中增加 `['_type' => 'mini']` 即可，例如：
+
+```php
+$order = [
+    '_type' => 'mini', // 注意这一行
+    'out_trade_no' => time().'',
+    'description' => 'subject-测试',
+    'amount' => [
+        'total' => 1,
+    ],
+    'scene_info' => [
+        'payer_client_ip' => '1.2.4.8',
+        'h5_info' => [
+            'type' => 'Wap',
+        ]       
+    ],
+];
+```
+
 ## APP 支付
 
 ### 例子
