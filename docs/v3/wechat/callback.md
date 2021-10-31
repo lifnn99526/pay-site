@@ -19,6 +19,8 @@ $result = Pay::wechat()->callback();
 
 ### 第一个参数
 
+#### `null`
+
 如果您没有传参，则 `yansongda/pay` 会自动识别微信的回调请求并进行验签解密处理，通过 `Collection` 实例返回微信的处理参数
 
 :::warning

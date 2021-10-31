@@ -23,7 +23,9 @@ $result = Pay::alipay()->callback();
 
 ### 第一个参数
 
-如果您没有传参，则 `yansongda/pay` 会自动识别支付宝的回调请求并处理，通过 `Collection` 实例返回支付宝的处理参数
+#### `null`
+
+如果您没有传参，或传 `null` 则 `yansongda/pay` 会自动识别支付宝的回调请求并处理，通过 `Collection` 实例返回支付宝的处理参数
 
 :::warning
 建议仅在 php-fpm 下使用，swoole 方式请使用 `ServerRequestInterface` 参数传递方式
