@@ -33,3 +33,7 @@ title: FAQ
 6. 微信支付报错 Prepay Response Error: Missing PrepayId
 
    预下单 失败了，一般是缺少参数或参数类型错误。可以自己捕获异常，看微信提示的详细信息，对照微信官方文档修改相关参数。
+
+7. Get Wechat Public Cert Error
+
+   检查微信商户密钥（mch_secret_key）

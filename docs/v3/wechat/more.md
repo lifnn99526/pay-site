@@ -118,3 +118,11 @@ $result = Pay::wechat()->pay($allPlugins, $params);
 
 - `Yansongda\Pay\Plugin\Wechat\Marketing\Coupon\StartPlugin`
 
+## 服务商-行业方案
+
+### 电商收付通（退款）
+
+- `Yansongda\Pay\Plugin\Wechat\Ecommerce\Refund\ApplyPlugin`
+- `Yansongda\Pay\Plugin\Wechat\Ecommerce\Refund\FindPlugin`
+- `Yansongda\Pay\Plugin\Wechat\Ecommerce\Refund\FindReturnAdvancePlugin`
+- `Yansongda\Pay\Plugin\Wechat\Ecommerce\Refund\ReturnAdvancePlugin`
