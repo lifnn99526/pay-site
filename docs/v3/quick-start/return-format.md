@@ -40,7 +40,7 @@ laravel 框架中，自行安装 `symfony/psr-http-message-bridge` 即可支持�
 :::
 
 :::warning ThinkPHP 框架
-由于 thinkPHP 框架不支持 PSR7 规范，因此，需要自行解包进行处理返回数据
+ThinkPHP 框架在 [https://github.com/top-think/framework/pull/2614](https://github.com/top-think/framework/pull/2614) 之后才支持 PSR7 规范，因此，之前的版本需要参考此 PR 自行解包进行处理返回数据
 :::
 
 ## Collection
