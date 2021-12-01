@@ -189,6 +189,7 @@ $result = Pay::alipay()->transfer([
     'out_biz_no' => '202106051432',
     'trans_amount' => '0.01',
     'product_code' => 'TRANS_ACCOUNT_NO_PWD',
+    'biz_scene' => 'DIRECT_TRANSFER',
     'payee_info' => [
         'identity' => 'ghdhjw7124@sandbox.com',
         'identity_type' => 'ALIPAY_LOGON_ID',
