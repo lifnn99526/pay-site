@@ -28,45 +28,45 @@ $result = Pay::wechat()->pay($allPlugins, $params);
 
 ## 资金应用-分账
 
-### 添加分账接收方API
+### 添加分账接收方
 
 - `Yansongda\Pay\Plugin\Wechat\Fund\Profitsharing\AddReceiverPlugin`
 
-### 请求分账API
+### 请求分账
 
 - `Yansongda\Pay\Plugin\Wechat\Fund\Profitsharing\CreatePlugin`
 
-### 删除分账接收方API
+### 删除分账接收方
 
 - `Yansongda\Pay\Plugin\Wechat\Fund\Profitsharing\DeleteReceiverPlugin`
 
-### 查询剩余待分金额API
+### 查询剩余待分金额
 
 - `Yansongda\Pay\Plugin\Wechat\Fund\Profitsharing\QueryAmountsPlugin`
 
-### 查询分账结果API
+### 查询分账结果
 
 - `Yansongda\Pay\Plugin\Wechat\Fund\Profitsharing\QueryPlugin`
 
-### 查询分账回退结果API
+### 查询分账回退结果
 
 - `Yansongda\Pay\Plugin\Wechat\Fund\Profitsharing\QueryReturnPlugin`
 
-### 请求分账回退API
+### 请求分账回退
 
 - `Yansongda\Pay\Plugin\Wechat\Fund\Profitsharing\ReturnPlugin`
 
-### 解冻剩余资金API
+### 解冻剩余资金
 
 - `Yansongda\Pay\Plugin\Wechat\Fund\Profitsharing\UnfreezePlugin`
 
 ## 营销工具-代金券
 
-### 创建代金券批次API
+### 创建代金券批次
 
 - `Yansongda\Pay\Plugin\Wechat\Marketing\Coupon\CreatePlugin`
 
-### 暂停代金券批次API
+### 暂停代金券批次
 
 - `Yansongda\Pay\Plugin\Wechat\Marketing\Coupon\PausePlugin`
 
@@ -74,27 +74,27 @@ $result = Pay::wechat()->pay($allPlugins, $params);
 
 - `Yansongda\Pay\Plugin\Wechat\Marketing\Coupon\QueryCouponDetailPlugin`
 
-### 查询批次详情API
+### 查询批次详情
 
 - `Yansongda\Pay\Plugin\Wechat\Marketing\Coupon\QueryStockDetailPlugin`
 
-### 查询代金券可用单品API
+### 查询代金券可用单品
 
 - `Yansongda\Pay\Plugin\Wechat\Marketing\Coupon\QueryStockItemsPlugin`
 
-### 查询代金券可用商户API
+### 查询代金券可用商户
 
 - `Yansongda\Pay\Plugin\Wechat\Marketing\Coupon\QueryStockMerchantsPlugin`
 
-### 下载批次退款明细API
+### 下载批次退款明细
 
 - `Yansongda\Pay\Plugin\Wechat\Marketing\Coupon\QueryStockRefundFlowPlugin`
 
-### 条件查询批次列表API
+### 条件查询批次列表
 
 - `Yansongda\Pay\Plugin\Wechat\Marketing\Coupon\QueryStocksPlugin`
 
-### 下载批次核销明细API
+### 下载批次核销明细
 
 - `Yansongda\Pay\Plugin\Wechat\Marketing\Coupon\QueryStockUseFlowPlugin`
 
@@ -102,11 +102,11 @@ $result = Pay::wechat()->pay($allPlugins, $params);
 
 - `Yansongda\Pay\Plugin\Wechat\Marketing\Coupon\QueryUserCouponsPlugin`
 
-### 重启代金券批次API
+### 重启代金券批次
 
 - `Yansongda\Pay\Plugin\Wechat\Marketing\Coupon\RestartPlugin`
 
-### 发放代金券批次API
+### 发放代金券批次
 
 - `Yansongda\Pay\Plugin\Wechat\Marketing\Coupon\SendPlugin`
 
@@ -114,7 +114,7 @@ $result = Pay::wechat()->pay($allPlugins, $params);
 
 - `Yansongda\Pay\Plugin\Wechat\Marketing\Coupon\SetCallbackPlugin`
 
-### 激活代金券批次API
+### 激活代金券批次
 
 - `Yansongda\Pay\Plugin\Wechat\Marketing\Coupon\StartPlugin`
 
