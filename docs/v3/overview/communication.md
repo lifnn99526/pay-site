@@ -10,10 +10,6 @@ title: 线上交流
 没有人义务回答你的问题，没有人欠你的，所以线上交流请文明用语，首先学会智慧提问、友好交流。
 :::
 
-## Discord <Badge type="tip" text="推荐" vertical="top" />
-
-https://discord.gg/b2eGk7appg
-
 ## Issue <Badge type="tip" text="推荐" vertical="top" />
 
 [https://github.com/yansongda/pay/issues](https://github.com/yansongda/pay/issues)

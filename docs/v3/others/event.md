@@ -48,7 +48,7 @@ Event::addListener(PayStarted::class, [new PayStartedListener(), 'sendEmail']);
 
 ### 支付开始
 
-- 事件类：Yansongda\Pay\Event\PayStarted::class
+- 事件类：Yansongda\Pay\Event\PayStarted
 - 说明：此事件将在支付进入核心流程时进行抛出。此时 SDK 只进行了相关初始化操作，其它所有操作均未开始。
 - 额外数据：
     - $rocket (相关参数)
@@ -78,7 +78,7 @@ Event::addListener(PayStarted::class, [new PayStartedListener(), 'sendEmail']);
 
 ### 收到通知
 
-- 事件类：Yansongda\Pay\Events\RequestReceived
+- 事件类：Yansongda\Pay\Event\CallbackReceived
 - 说明：此事件将在收到支付方的请求（通常在异步通知或同步通知）时抛出
 - 额外数据：
     - $provider (支付机构)
@@ -87,7 +87,7 @@ Event::addListener(PayStarted::class, [new PayStartedListener(), 'sendEmail']);
     
 ### 调用其它方法
 
-- 事件类：Yansongda\Pay\Events\MethodCalled
+- 事件类：Yansongda\Pay\Event\MethodCalled
 - 说明：此事件将在调用除 PAYMETHOD 方法（例如，查询订单，退款，取消订单）时抛出
 - 额外数据：
     - $provider (支付机构)
