@@ -11,7 +11,7 @@ SDK 使用 [symfony/event-dispatcher](https://github.com/symfony/event-dispatche
 在使用之前，需要先确保安装了 `symfony/event-dispatcher` 组件，如果没有，请安装
 
 ```shell
-composer require symonfy/event-dispatcher
+composer require symfony/event-dispatcher
 ```
 
 ## 使用
