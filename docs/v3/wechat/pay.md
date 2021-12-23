@@ -198,16 +198,41 @@ $result = Pay::wechat()->mini($order);
 
 后续调起支付不再本文档讨论范围内，请参考[官方文档](https://pay.weixin.qq.com/wiki/doc/apiv3/apis/chapter3_5_4.shtml)
 
+## 账户转账
+
+### 例子
+
+```php
+Pay::config($config);
+
+$order = [
+    'out_batch_no' => time().'',
+    'batch_name' => 'subject-测试',
+    'batch_remark' => 'test',
+    'total_amount' => 1,
+    'total_num' => 1,
+    'transfer_detail_list' => [
+        'out_detail_no' => time().'-1',
+        'transfer_amount' => 1,
+        'transfer_remark' => 'test',
+        'openid' => 'MYE42l80oelYMDE34nYD456Xoy',
+    ],
+];
+
+$result = Pay::wechat()->transfer($order);
+```
+
+### 订单配置参数
+
+**所有订单配置中，客观参数均不用配置，扩展包已经为大家自动处理了**，比如，`appid`，`sign` 等参数，大家只需传入订单类主观参数即可。
+
+所有订单配置参数和官方无任何差别，兼容所有功能，所有参数请参考[这里](https://pay.weixin.qq.com/wiki/doc/apiv3/wxpay/pay/transfer/chapter3_1.shtml)，查看「请求参数」一栏。
+
+
 ## 刷卡支付
 
 :::warning
 微信支付 v3 版 api 并不支持刷卡支付，后续将接入微信支付 v2 版 API，敬请期待。如果确实有此需求，可以使用 [Pay 的 v2 版](/docs/v2/wechat/)
-:::
-
-## 账户转账
-
-:::warning
-微信支付 v3 版 api 并不支持转账，后续将接入微信支付 v2 版 API，敬请期待。如果确实有此需求，可以使用 [Pay 的 v2 版](/docs/v2/wechat/)
 :::
 
 ## 普通红包

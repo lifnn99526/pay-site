@@ -60,6 +60,56 @@ $result = Pay::wechat()->pay($allPlugins, $params);
 
 - `Yansongda\Pay\Plugin\Wechat\Fund\Profitsharing\UnfreezePlugin`
 
+## 资金应用 - 转账到零钱
+
+### 发起批量转账
+
+- `\Yansongda\Pay\Plugin\Wechat\Fund\Transfer\CreatePlugin`
+
+### 微信批次单号查询批次单
+
+- `\Yansongda\Pay\Plugin\Wechat\Fund\Transfer\QueryBatchIdPlugin`
+
+### 微信明细单号查询明细单
+
+- `\Yansongda\Pay\Plugin\Wechat\Fund\Transfer\QueryBatchDetailIdPlugin`
+
+### 商家批次单号查询批次单
+
+- `\Yansongda\Pay\Plugin\Wechat\Fund\Transfer\QueryOutBatchNoPlugin`
+
+### 商家明细单号查询明细单
+
+- `\Yansongda\Pay\Plugin\Wechat\Fund\Transfer\QueryOutBatchDetailNoPlugin`
+
+### 转账电子回单申请受理
+
+- `\Yansongda\Pay\Plugin\Wechat\Fund\Transfer\CreateBillReceiptPlugin`
+
+### 查询转账电子回单
+
+- `\Yansongda\Pay\Plugin\Wechat\Fund\Transfer\QueryBillReceiptPlugin`
+
+### 转账明细电子回单受理
+
+- `\Yansongda\Pay\Plugin\Wechat\Fund\Transfer\CreateDetailReceiptPlugin`
+
+### 查询转账明细电子回单受理结果
+
+- `\Yansongda\Pay\Plugin\Wechat\Fund\Transfer\QueryBillReceiptPlugin`
+
+### 下载电子回单
+
+- `\Yansongda\Pay\Plugin\Wechat\Fund\Transfer\DownloadReceiptPlugin`
+
+### 查询账户实时余额
+
+- `\Yansongda\Pay\Plugin\Wechat\Fund\Balance\QueryPlugin`
+
+### 查询账户日终余额
+
+- `\Yansongda\Pay\Plugin\Wechat\Fund\Balance\QueryDayEndPlugin`
+
 ## 营销工具-代金券
 
 ### 创建代金券批次
