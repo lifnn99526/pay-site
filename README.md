@@ -22,3 +22,13 @@ features:
   details: 文件结构清晰，架构明了，欢迎 PR。
 footer: MIT Licensed | Copyright © 2017-now Yansongda
 ---
+
+## 授权
+
+### 类库
+
+[yansongda/pay](https://github.com/yansongda/pay) 项目采用 MIT 协议开源发布，任何人均可在遵循 MIT 协议的情况下随意使用。
+
+### 文档
+
+- 网站（[https://pay.yansongda.cn](https://pay.yansongda.cn)）（包括但不限于 `pay.yansongda.cn` 域名下所有文字、图片）以 [CC BY SA 4.0 国际许可协议](https://creativecommons.org/licenses/by/4.0/deed.zh))授权。
