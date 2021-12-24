@@ -216,6 +216,7 @@ $order = [
         'transfer_amount' => 1,
         'transfer_remark' => 'test',
         'openid' => 'MYE42l80oelYMDE34nYD456Xoy',
+        // 'user_name' => '闫嵩达'  // 明文传参即可，sdk 会自动加密
     ],
 ];
 
