@@ -212,11 +212,13 @@ $order = [
     'total_amount' => 1,
     'total_num' => 1,
     'transfer_detail_list' => [
-        'out_detail_no' => time().'-1',
-        'transfer_amount' => 1,
-        'transfer_remark' => 'test',
-        'openid' => 'MYE42l80oelYMDE34nYD456Xoy',
-        // 'user_name' => '闫嵩达'  // 明文传参即可，sdk 会自动加密
+        [
+            'out_detail_no' => time().'-1',
+            'transfer_amount' => 1,
+            'transfer_remark' => 'test',
+            'openid' => 'MYE42l80oelYMDE34nYD456Xoy',
+            // 'user_name' => '闫嵩达'  // 明文传参即可，sdk 会自动加密
+        ],
     ],
 ];
 
