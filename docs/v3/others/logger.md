@@ -6,6 +6,10 @@ title: 日志系统
 
 ### 使用内置日志系统
 
+:::tip
+使用前，请确保已经安装了 `monolog/monolog`: `composer require monolog/monolog`
+:::
+
 SDK 自带日志系统，如果需要指定日志文件或日志级别，请 config 中传入下列参数。
 如果不传入，则日志系统默认不启用。
 
